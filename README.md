@@ -99,7 +99,8 @@ SportDec Search Mashup API was written in Java 8 using the Eclipse as editor.
 * [Eclipse.org] - Oxygen.1a Release (4.7.1a)
 * [Maven.apache.org] - Maven (Project Management Tool)
 
-The Unit Tests are available and were running with JUnit.
+* [Twitter API] - <https://developer.twitter.com/en/docs/tweets/search/api-reference/get-search-tweets.html>
+* [GitHub API] - <https://developer.github.com/v3/search/#search-repositories>
 
 ### Author
 
