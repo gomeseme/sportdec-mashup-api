@@ -61,16 +61,35 @@ Latest Tweets:		-> 1 tweets were found.
 
 *******************************************
 ```
-
 * Search with output in Json
-
 ```
 java -jar search-mashup-api-0.0.1-SNAPSHOT.jar -k Football -o json
 ```
-
 ```
 [{"name":"nflgame","description":"An API to retrieve and read NFL Game Center JSON data. It can work with real-time data, which can be used for fantasy football.","url":"https://github.com/BurntSushi/nflgame","owner":"BurntSushi","createDate":"2012-08-29T10:00:58.000Z","latestTweet":[{"createdAt":"2018-04-22T23:49:08.000Z","text":"RT @NFL: Today in @NFLhistory... the @Broncos traded up in the 2010 @NFLDraft to select @TimTebow 25th overall!\n\n2018 #NFLDraft, April 26-2…","user":"NFL Game Live","userUrl":""}]}]
 ```
+##
+
+### Models
+#### Repository
+| Property               | Type | Description
+| ---------------------- | ---- | -----------|
+| name | ```string```| Name of GitHub project/repository |
+| description | ```string```| Description of GitHub project |
+| url | ```string```| URL of GitHub repository |
+| owner | ```string```| GitHub login name of the project owner |
+| createDate | ```Date``` | DateTime of the creation of the project. JSON date is displayed as yyyy-MM-dd'T'HH:mm:ss'Z' |
+| latestTweet | ```Tweet[]``` | ArrayList of Tweet items. |
+
+#### Tweet
+| Property               | Type | Description
+| ---------------------- | ---- | -----------|
+| createdAt | ```Date```| DateTime of the creation of tweet. JSON date is displayed as yyyy-MM-dd'T'HH:mm:ss'Z'  |
+| text | ```string```| Tweet text |
+| user | ```string```| Login of the user who created the Tweet. |
+| userUrl | ```string```| The URL for the Twitter user's profile | 
+
+##
 
 ### Tech
 
